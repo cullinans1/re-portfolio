@@ -15,7 +15,7 @@ function Project({ project }) {
         <h3>
           <a href={link} target="_blank">{displayName}</a>{" "}
           <a href={repo} target="_blank">
-            <i class="fab fa-github fa-lg"></i>
+            <i className="fab fa-github fa-lg"></i>
           </a>
         </h3>
         <p>{description}</p>

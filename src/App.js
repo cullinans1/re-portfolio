@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Page from "./components/Page";
 import "./App.css";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [pages] = useState([
@@ -28,6 +29,7 @@ function App() {
         currentPage={currentPage}
       ></Nav>
       <main>
+        <Portfolio></Portfolio>
         <Page currentPage={currentPage}></Page>
       </main>
     </div>

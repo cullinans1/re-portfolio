@@ -13,6 +13,7 @@ code {
 }
 
 .jumbotron {
+  display: flex;
   text-align: center;
   justify-content: center;
   height: calc(100vh + 53px);
@@ -26,6 +27,16 @@ code {
   top: 0;
   left: 0;
   z-index: 0;
+}
+.flex {
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mytitle {
+  font-size: xx-large;
+  z-index: 5;
 }
 section {
   text-align: center;

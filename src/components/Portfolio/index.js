@@ -41,13 +41,13 @@ function Portfolio() {
     },
   ]);
   return (
-    <div>
-      <div className="container-fluid">
+    
+      <div className="container-fluid proj-container">
         {projects.map((project, idx) => (
           <Project project={project} key={"project" + idx} />
         ))}
       </div>
-    </div>
+    
   );
 }
 

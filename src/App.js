@@ -3,6 +3,9 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Page from "./components/Page";
 import "./App.css";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 
 function App() {
   const [pages] = useState([
@@ -28,7 +31,10 @@ function App() {
         currentPage={currentPage}
       ></Nav>
       <main>
-        <Page currentPage={currentPage}></Page>
+        {/* <Page currentPage={currentPage}></Page> */}
+        <About></About>
+        <Portfolio></Portfolio>
+        <Resume></Resume>
       </main>
     </div>
   );

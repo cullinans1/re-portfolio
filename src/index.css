@@ -47,7 +47,8 @@ section {
 .proj-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 5vw;
+  padding: 5vw;
+  background-color: #f5f5f5;
 }
 .project {
   position: relative;

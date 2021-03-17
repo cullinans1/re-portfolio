@@ -24,14 +24,14 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
       <Nav
         pages={pages}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       ></Nav>
+      <Header></Header>
       <main>
-        {/* <Page currentPage={currentPage}></Page> */}
+        {/* <Page currentPage={currentPage}></Page>  */}
         <About></About>
         <Portfolio></Portfolio>
         <Resume></Resume>

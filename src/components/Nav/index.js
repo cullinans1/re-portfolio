@@ -11,12 +11,14 @@ function Nav(props) {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <ul className="navbar-nav">
         {pages.map((Page) => (
-          <li
+          <a href ={`#${Page.name}`}>
+            <li
             className={`nav-link ${currentPage.name === Page.name && "active"}`}
             key={Page.name}
           >
             <span onClick={() => setCurrentPage(Page)}>{Page.name}</span>
           </li>
+          </a>
         ))}
       </ul>
     </nav>

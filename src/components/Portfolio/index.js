@@ -41,13 +41,12 @@ function Portfolio() {
     },
   ]);
   return (
-    
-      <div className="container-fluid proj-container">
-        {projects.map((project, idx) => (
-          <Project project={project} key={"project" + idx} />
-        ))}
-      </div>
-    
+    <div className="container-fluid proj-container">
+      <h2 className="col-12" id='Portfolio'> Projects </h2>
+      {projects.map((project, idx) => (
+        <Project project={project} key={"project" + idx} />
+      ))}
+    </div>
   );
 }
 

@@ -3,13 +3,23 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.container, .container-fluid {
+  transition: all .5s ease-out;
+}
+.container:hover, .container-fluid:hover {
+  padding: 1vw;
 }
 
 .jumbotron {
@@ -17,17 +27,10 @@ code {
   text-align: center;
   justify-content: center;
   height: calc(100vh + 53px);
-  margin-bottom: 0;
   background-image: url("../src/assets/mountains.jpg");
   background-size: cover;
 }
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
+
 .flex {
   align-items: center;
   display: flex;
@@ -41,14 +44,20 @@ code {
 section {
   text-align: center;
 }
-.Portfolio {
-  background-color: #f5f5f5;
+#Portfolio {
+  text-align: center;
+  border-bottom: 10px solid #38080c;
+  border-radius: 5px;
+  padding-bottom: 20px;
 }
 .proj-container {
   display: flex;
   flex-wrap: wrap;
   padding: 5vw;
+  padding-top: 2vw;
+  margin-top: 3vw;
   background-color: #f5f5f5;
+  justify-content: center;
 }
 .project {
   position: relative;
@@ -63,6 +72,7 @@ section {
 }
 .project-text {
   color: rgb(0, 0, 0);
+  text-align: center;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -106,6 +116,11 @@ section {
 
 /* for phones */
 @media screen and (max-width: 768px) {
+  #Portfolio {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
   .proj-container {
     margin: 0;
   }

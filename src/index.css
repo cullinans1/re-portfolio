@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    font-size: 20px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,11 +15,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.container, .container-fluid {
-  transition: all .5s ease-out;
+.container,
+.container-fluid {
+  transition: all 0.5s ease-out;
 }
-.container:hover, .container-fluid:hover {
+.container:hover,
+.container-fluid:hover {
   padding: 1vw;
+}
+
+.intro-text {
+  color: rgba(33, 37, 41, 0);
+}
+.intro-text:hover {
+  transition: all 1s ease-in-out;
+  color: rgba(33, 37, 41, 1);
 }
 
 .jumbotron {
@@ -27,8 +37,17 @@ code {
   text-align: center;
   justify-content: center;
   height: calc(100vh + 53px);
-  background-image: url("../src/assets/mountains.jpg");
-  background-size: cover;
+  background: rgb(191, 195, 200);
+  background: linear-gradient(
+    0deg,
+    rgba(191, 195, 200, 0) 0%,
+    rgba(191, 195, 200, 0.742734593837535) 9%,
+    rgba(30, 192, 189, 1) 22%,
+    rgba(219, 226, 172, 1) 39%,
+    rgba(11, 189, 191, 1) 62%,
+    rgba(57, 106, 148, 1) 81%,
+    rgba(52, 58, 64, 1) 100%
+  );
 }
 
 .flex {
@@ -44,6 +63,7 @@ code {
 section {
   text-align: center;
 }
+
 #Portfolio {
   text-align: center;
   border-bottom: 10px solid #38080c;

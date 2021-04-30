@@ -19,7 +19,7 @@ function Page({ currentPage }) {
   };
 
   return (
-    <section>
+    <section className={`${currentPage.name}`}>
       <h2>{currentPage.name}</h2>
       <PageContent>{renderPage()}</PageContent>
     </section>

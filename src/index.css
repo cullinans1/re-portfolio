@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
@@ -12,23 +12,25 @@ html {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.container,
+/* .container,
 .container-fluid {
   transition: all 0.5s ease-out;
 }
 .container:hover,
 .container-fluid:hover {
   padding: 1vw;
-}
+} */
 
 .intro-text {
   color: rgba(33, 37, 41, 0);
+  width: 90vw;
+  transition: all 1.5s ease;
 }
 .intro-text:hover {
-  transition: all 1s ease-in-out;
+  transition: all 0.75s ease;
   color: rgba(33, 37, 41, 1);
 }
 
@@ -66,7 +68,7 @@ section {
 
 #Portfolio {
   text-align: center;
-  border-bottom: 10px solid #38080c;
+  border-bottom: 10px solid rgb(11, 189, 191);
   border-radius: 5px;
   padding-bottom: 20px;
 }
@@ -108,7 +110,7 @@ section {
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
   border: 15px solid #3a3d44d7;
-  box-shadow: 5px 5px 80px 5px rgb(75, 75, 75);
+  box-shadow: 5px 5px 80px 5px rgb(52, 58, 64);
   transition: all 0.5s ease-in-out;
 }
 
@@ -117,18 +119,18 @@ section {
 }
 .project-text p {
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-text a {
   text-decoration: none;
   font-weight: bold;
-  color: #38080c6c;
+  color: rgba(57, 106, 148, .5);
   transition: all 0.3s ease-in-out;
 }
 
 .project-text a:hover {
-  color: #38080c;
+  color: rgb(57, 106, 148);
 }
 .container-fluid {
   width: auto;
@@ -160,12 +162,12 @@ section {
   }
   .project-text p {
     font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .project-text a {
     text-decoration: none;
     font-weight: bold;
-    color: #38080c;
+    color: rgba(57, 106, 148, 1)
   }
 }

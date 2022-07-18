@@ -15,7 +15,7 @@ function About() {
         coding and wanted to learn more. It was then I decided to pursue a
         career in web development. I was accepted into the
         University of Arizona's Coding Bootcamp where I tackled full-stack
-        development and compelted the course in November 2020. I am knowledgable
+        development and completed the course in November 2020. I am knowledgeable
         in HTML5, CSS, Bootstrap, JavaScript, ES6, Node.js,
         Express.js, MySQL, GraphQL, MongoDB, and Git. I am also familiar with
         Test-Driven-Development (TDD), Object-Oriented Programming (OOP), Object
